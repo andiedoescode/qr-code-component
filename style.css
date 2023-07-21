@@ -1,12 +1,6 @@
 /******************************************
-/* CSS
+/* COLOURS
 /*******************************************/
-
-/* Box Model Hack */
-* {
-  box-sizing: border-box;
-}
-
 :root {
   --white: hsl(0, 0%, 100%);
   --lightGrey: hsl(212, 45%, 89%);
@@ -14,20 +8,23 @@
   --darkBlue: hsl(218, 44%, 22%);
 }
 
-body {
-  background-color: var(--lightGrey);
-}
 /******************************************
-/* LAYOUT
+/* STYLING
 /*******************************************/
-
 body {
+  box-sizing: border-box;
+  background-color: var(--lightGrey);
   font-family: "Outfit", sans-serif;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
 article {
   width: 320px;
-  margin: 225px auto;
+  margin: auto;
   background-color: var(--white);
   border-radius: 15px;
 }
